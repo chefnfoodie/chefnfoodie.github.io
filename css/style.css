@@ -1,0 +1,153 @@
+html,
+body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+#map {
+    margin: 20px 20px 0 12px;
+    height: 90vh;
+    width: 90vw;
+}
+
+#weatherName {
+    font-style: normal;
+    font-family: Roboto;
+    font-size: 1.3em;
+    text-decoration: underline;
+    cursor: pointer;
+    color: #DC143C;
+    padding-bottom: .5em;
+    margin-bottom: .5em;
+    margin-top: .5em;
+}
+
+#weatherResults {
+    padding-left: 2vw;
+    padding-right: 2vw;
+    box-shadow: 0 1vw 1vw rgb(175, 57, 79);
+    border-radius: 3px;
+    position: absolute;
+    top: 20vh;
+    height: 50vh;
+    left: 65vw;
+    width: 25vw;
+    margin-right: 75vw;
+    background-color: #fff8dc;
+    overflow: scroll;
+    font-size: 1.6vw;
+    z-index: 0;
+    border: 2px solid gray;
+    ;
+}
+
+.controls {
+    margin-top: 10px;
+    border: 1px solid transparent;
+    border-radius: 2px 0 0 2px;
+    box-sizing: border-box;
+    height: 32px;
+    outline: none;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+#topcontainer {
+    position: relative;
+}
+
+#filterView {
+    border: 1px solid transparent;
+    font-family: Roboto;
+    width: 30vw;
+    height: 32px;
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+#filterView:focus {
+    border-color: #4d90fe;
+}
+
+#pac-input {
+    border: 1px solid transparent;
+    font-family: Roboto;
+    width: 30vw;
+    height: 32px;
+    margin-left: 10px;
+    top: 20px;
+    font-size: 15px;
+    font-weight: 300;
+    text-overflow: ellipsis;
+}
+
+#pac-input:focus {
+    border-color: #4d90fe;
+}
+
+.pac-container {
+    font-family: Roboto;
+}
+
+#target {
+    width: 345px;
+}
+
+#type-selector {
+    color: #fff;
+    background-color: #4d90fe;
+    padding: 5px 11px 0px 11px;
+}
+
+#type-selector label {
+    font-family: Roboto;
+    font-size: 13px;
+    font-weight: 300;
+}
+
+#content {
+    font-size: 1vw;
+    position: relative;
+    padding-left: .5vw;
+    padding-right: .5vw;
+    width: 15vw;
+}
+
+#newsItem {
+    font-family: Roboto;
+    font-style: normal;
+    font-size: .6em;
+    color: #0B173B;
+    padding-bottom: .5em;
+    margin-bottom: .5em;
+    margin-top: .5em;
+}
+
+#relatedNewsTitle {
+    font-style: normal;
+    font-family: Roboto;
+    font-size: 1em;
+    color: #DC143C;
+    padding-bottom: .5em;
+    margin-bottom: .5em;
+    margin-top: .5em;
+}
+
+#nytapidiv {
+    padding-left: 1vw;
+    padding-right: 1vw;
+    box-shadow: 0 1vw 1vw rgb(175, 57, 79);
+    border-radius: 3px;
+    position: absolute;
+    top: 20vh;
+    height: 20vh;
+    left: 5vw;
+    width: 25vw;
+    margin-right: 75vw;
+    background-color: #fff8dc;
+    overflow: scroll;
+    font-size: 2vw;
+    z-index: 0;
+    border: 2px solid gray;
+}
