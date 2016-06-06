@@ -4,8 +4,8 @@ var bio = {
   "name" : "Lavanya",
   "role" : "Web Developer",
   "contacts": {
-    "mobile": "57-6987-987",
-    "email": "lav2gmail.com",
+    "mobile": "123-456-7890",
+    "email": "gmail.com",
     "github": "chefnfoodie",
     "twitter": "chefnfoodie",
     "location": "Burnaby, BC. Canada"
@@ -39,7 +39,7 @@ var work = {
 var education = {
   "schools": [
   {
-    "name": " SRM Easwari Engineering College",
+    "name": " SRM Easwari Engineering College- University of Madras",
     "city": " Chennai, India.",
     "course": "Bachelor of Engineering",
     "major": "Electronics and Communication",
