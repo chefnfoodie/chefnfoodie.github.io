@@ -2,50 +2,130 @@
 <html lang="en">
 
 <head>
-  <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
-  <meta charset="utf-8">
-  <link rel="stylesheet" href="css/style.css">
 
-  <title>
-    Neighbourhood map project
-  </title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>1 Col Portfolio - Start Bootstrap Template</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/1-col-portfolio.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
 
 </head>
 
-<body>
-  <div>
+<body background ="images/plasma.jpg">
 
-    <div id="topcontainer">
-      <input id="pac-input" class="controls" type="text" placeholder="Select your location" data-bind="value: currentplace, event: {keypress: onSearch}, valueUpdate: 'afterkeydown'" />
-      <input id="filterView" class="controls" type="text" placeholder="Filter the results" data-bind="foreach: placeList, value: selectedPlace,  valueUpdate: 'keyup'" />
-    </div>
 
-    <div id="map">
-    </div>
 
-    <div id="weatherResults">
-      <div data-bind="foreach: {data: listViewList, as: 'weatherdata'},  value: clickedplace, valueUpdate: 'keyup'">
-        <div data-bind="click: $parent.listViewListClick">
-          <div id="weatherName" data-bind="text: weatherdata.name, attr: {'class': weatherdata.name }"></div>
+    <!-- Page Content -->
+    <div class="container">
+
+        <!-- Page Heading -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">Projects</h1>
+            </div>
         </div>
-      </div>
-    </div>
-  </div>
 
-  <div id="nytapidiv">
-    <div id="relatedNewsTitle">Related News</div>
-    <div id="relatedNews"></div>
-  </div>
+        <div class="row">
+            <div class="col-md-4">
 
-  <script type="text/javascript" src="js/lib/jquery.min.js"></script>
-  <script type="text/javascript" src="js/lib/knockout-3.2.0.js"></script>
+            </div>
+            <div class="col-md-8">
+                <h3>Project one</h3>
+                <h4>Neighborhood map</h4>
 
-  <script type="text/javascript" src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
-  <link property='stylesheet' rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+                <a class="btn btn-primary" href="MapProject/index.html">View Project page<span class="glyphicon glyphicon-chevron-right"></span></a>
+                <a class="btn btn-primary" href="https://github.com/chefnfoodie/Neighbourhood-map-project">View source code <span class="glyphicon glyphicon-chevron-right"></span></a>
+            </div>
+        </div>
+        <hr>
+        <!-- /.row -->
+        <!-- Project Bcit -->
+        <div class="row">
+            <div class="col-md-4">
 
-  <script type="text/javascript" src="js/app.js"></script>
-  <script type="text/javascript" async defer src="https://maps.googleapis.com/maps/api/js?libraries=places&amp;key=AIzaSyDiXj5JWEIMBww17IB1Z_6UrwQohiVAkCs&amp;callback=initializeMap">
-  </script>
+            </div>
+            <div class="col-md-8">
+                <h3>Project 2</h3>
+                <h4>BCIT Project: 1950, Silver Design</h4>
+                <a class="btn btn-primary" href="images/sitemap.jpg">View Project<span class="glyphicon glyphicon-chevron-right"></span></a>
+
+            </div>
+        </div>
+        <hr>
+
+        <!-- /.row -->
+
+        <!-- Project three -->
+        <div class="row">
+            <div class="col-md-4">
+
+            </div>
+
+
+            <div class="col-md-8">
+                <h3>Project three</h3>
+                <h4>Build a Portfolio site</h4>
+                <a class="btn btn-primary" href="images/pagemock.png">View Project page <span class="glyphicon glyphicon-chevron-right"></span></a>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <hr>
+
+        <!-- Project four -->
+        <div class="row">
+            <div class="col-md-4">
+
+            </div>
+
+
+            <div class="col-md-8">
+                <h3>Project four</h3>
+                <h4>Interactive Resume </h4>
+                <a class="btn btn-primary" href="resumeProject/index.html">View Project page <span class="glyphicon glyphicon-chevron-right"></span></a>
+                <a class="btn btn-primary" href="https://github.com/chefnfoodie/frontend-nanodegree-resume">View source code <span class="glyphicon glyphicon-chevron-right"></span></a>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <hr>
+
+        <!-- Project Five -->
+        <div class="row">
+            <div class="col-md-4">
+
+            </div>
+            <div class="col-md-8">
+                <h3>Project Five</h3>
+                <h4>Classic Arcade game clone</h4>
+                <a class="btn btn-primary" href="gameProject/index.html">View Project page<span class="glyphicon glyphicon-chevron-right"></span></a>
+                <a class="btn btn-primary" href="https://github.com/chefnfoodie/frontend-nanodegree-arcade-game">View source code <span class="glyphicon glyphicon-chevron-right"></span></a>
+            </div>
+        </div>
+        <!-- /.row -->
+        <hr>
+        <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
 
 </body>
 
