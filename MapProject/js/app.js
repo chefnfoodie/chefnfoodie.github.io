@@ -77,7 +77,7 @@ function loadInitialMapData(viewModel) {
 
 
 function callNYTimesArticleAPI(viewModel) {
-  var nytimesAPIKey = "9b2521936bd38fb2075818578ac0855c%3A6%3A72516684";
+  var nytimesAPIKey = "610abfad5361ee0dddfb69007a787857:17:72469892";
   var requestString = "http://api.nytimes.com/svc/search/v2/articlesearch.json?fq=" + searchPlace + "&sort=newest&api-key=" + nytimesAPIKey;
   $.ajax({
     url: requestString,
