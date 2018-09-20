@@ -4,15 +4,11 @@
    width: device-width;
 }
 
-html,body
-{
-    width: 100%;
-    height: 100%;
-    margin: 0px;
-    padding: 0px;
-    overflow-x: hidden;
+body,
+html {
+   width: 100%;
+   height: 100%;
 }
-
 
 body {
    font-family: 'Source Sans Pro';
@@ -108,11 +104,10 @@ h6 {
    -webkit-background-size: cover;
    -moz-background-size: cover;
    -o-background-size: cover;
-   position: relative;
 }
 
 .myInfo {
-   margin-top: 15%;
+   margin-top: 6rem;
    float: left;
    width: 34%;
    height: 18em;
@@ -127,25 +122,15 @@ h6 {
    color: black;
 }
 
-/*.transbox p {
-   font-family: 'Source Sans Pro';
-   font-size: 1.7vw;
-   font-weight: bold;
-   color: black;
-   margin: 5%;
-}
-*/
-
 .myPic {
    width: 100%;
-   max-width: 25em;
+   max-width: 50%;
    height: 27em;
    background: url("../img/comicPic.png");
-   -webkit-background-size: cover;
-   -moz-background-size: cover;
-   -o-background-size: cover;
-   background-size: cover;
-   background-position: center center;
+   -webkit-background-size: contain;
+   -moz-background-size: contain;
+   -o-background-size: contain;
+   background-position: center;
    background-repeat: no-repeat;
    position: absolute;
    left: 48%;
@@ -272,10 +257,6 @@ h6 {
    font-weight: 700;
    display: block;
    max-width: 30rem;
-}
-/* portfolio items padding */
-.no-gutters > [class*="col-"]{
-   padding: 6px;
 }
 
 .portfolio-item {
@@ -428,9 +409,12 @@ mark {
    }
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
+@media only screen and (min-device-width: 315px) and (max-device-width: 767px) {
    .masthead {
-      max-height: 20rem;
+      min-height: 15rem;
+   }
+   .container{
+      width: 100%;
    }
    .myInfo {
       margin-top: 1em;
@@ -459,21 +443,16 @@ mark {
       font-size: 4.4vw;
       color: black;
    }
-   .picContain {
-      display: block;
-      width: 100%;
-      position: relative;
-   }
+
    .myPic {
       width: 100%;
-      max-width: 18em;
-      height: 20em;
+      max-width: 85%;
+      height: 12rem;
+      position:inherit;
       background-repeat: no-repeat;
-      background-size: 90% 60%;
-      position: absolute;
-      left: 50%;
-      margin-right: -50%;
-      transform: translate(-50%, -10%);
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 3rem;
    }
 }
 
