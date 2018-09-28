@@ -293,6 +293,23 @@ h6 {
    font-weight: 300;
    font-size: 1.2rem;
 }
+#viewCode{
+   font-weight: bold;
+   width: 5rem;
+   height: 2.7rem;
+   background-color: #fd7e14;
+   padding: 0.3em;
+}
+#viewProject{
+
+    font-weight: bold;
+    width: 5rem;
+    height: 2.7rem;
+    background-color: #fd7e14;
+    padding: 0.3em;
+    position: relative;
+    left: 5.7rem;
+}
 
 footer.footer {
    padding-top: 5rem;
